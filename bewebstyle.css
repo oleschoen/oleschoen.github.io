@@ -1,0 +1,418 @@
+
+*{
+    box-sizing: content-box;
+    padding: 0;
+    margin: 0;
+    font-family: Tahoma, Verdana, Segoe, sans-serif;
+	overflow-x: hidden;
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+header {
+	display: flex;
+	justify-content: space-evenly;
+	height: 15vh;
+	width: 100%;
+	background-color: deepskyblue;
+	color: white;
+}
+
+.title {
+	width: fit-content;
+	display: inline-flex;
+	flex-wrap: nowrap;
+	text-transform: uppercase;
+}
+
+.linklist {
+	display: inline-flex;
+	justify-content: baseline;
+	width: 50%;
+	list-style: none;
+	margin-right: 3%;
+}
+
+.linklist a {
+	color: white;
+	font-size: 15px;
+	padding: 0% 10% 0% 10%;
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.introduction {
+    display: flex;
+    justify-content: space-evenly;
+	align-items: center;
+    color: black;
+	background-color: white;
+	width: 100%;
+	height: 90vh;
+	margin-top: 10vh;
+}
+
+.introduction .textcontainer {
+	display: inline-flex;
+	flex-wrap: wrap;
+	text-align: center;
+	padding: 5% 0;
+	width: 40%;
+}
+
+.introduction div {
+	display: inline-flex;
+	width: 40%;
+}
+
+.rslides {
+    position: relative;
+    list-style: none;
+    overflow: hidden;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+
+}
+  
+.rslides li {
+    backface-visibility: hidden;
+    position: absolute;
+    display: none;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+  
+.rslides li:first-child {
+    position: relative;
+    display: block;
+    float: left;
+}
+  
+.rslides img {
+    display: block;
+    height: auto;
+    float: left;
+    width: 100%;
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.covering-letter {
+    display: flex;
+	flex-wrap: wrap;
+    justify-content: center;
+	align-items: center;
+    color: black;
+	width: 100%;
+	height: 90vh;
+}
+
+.covering-letter h2 {
+    width: 100%;
+	height: 10%;
+	margin-left: 5vh;
+}
+
+.covering-letter p {
+    width: 100%;
+	margin: 0 5vh 0 5vh;
+	height: 60%;
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.skills {
+	display: flex;
+	height: 40vh;
+	width: 100%;
+	justify-content: flex-start;
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.CV {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 250vh;
+	overflow: scroll;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.CV div {
+    display: inline-flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    width: 90%;
+    height: 8%;
+    margin: 0 auto;
+    overflow: hidden;
+    border: 2px solid #E0E0E0;
+    border-radius: 20px;
+	flex-shrink: 4;
+}
+
+.CV div:hover {
+    box-shadow: 0px 0px 30px rgba(0,0,0, 0.2);
+  }
+
+.CV div h3 {
+    display: inline-flex;
+    width: 100%;
+    margin-left: 2%;
+    margin-top: 0.5%;
+}
+
+.CV div img {
+    display: inline-flex;
+    max-width: 10%;
+    height: 50%;
+    object-fit: contain;
+}
+
+.CV div p {
+    display: inline-flex;
+    justify-content: center;
+    width: 35%;
+    height: fit-content;
+
+}
+
+.CV h3 {
+    display: inline-flex;
+    width: 90%;
+	margin: 0 auto;
+	flex-shrink: 2;
+}
+
+.CV h2 {
+    display: inline-flex;
+    width: 90%;
+	margin: 0 auto;
+	flex-shrink: 2;
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+	height: 20vh;
+    padding-bottom: 3%;
+    padding-top: 2%;
+    text-align: center;
+    background-color: white;
+    font-weight: bolder;
+    color: black;
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+@media only screen and (min-width: 0px) {
+
+	body {
+		width: auto;
+	}
+
+    header {
+		height: 18vh;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		align-items: center;
+		padding-right: 3%;
+		padding-left: 2%;
+	}
+
+	.linklist {
+		width: 18%;
+		display: flex;
+		flex-direction: column;
+		justify-content: baseline;
+		margin-left: 40%;
+		text-align: center;
+		font-weight: bold;
+	}
+
+	.introduction {
+		height: 62vh;
+	}
+
+	.introduction h1 {
+		font-size: 20px;
+	}
+
+	.covering-letter {
+		display: flex;
+		justify-content: flex-start;
+		flex-direction: column;
+		align-content: center;
+		height: 80vh;
+		padding-top: 0%;
+		overflow: visible;
+	}
+
+    .covering-letter h2 {
+		font-size: 18px;
+		height: 5%;
+		text-align: center;
+		margin: 5% 0 5% 0;
+		padding: 0%;
+	}
+
+	.covering-letter p {
+		width: 95%;
+		text-align: center;
+		overflow: visible;
+	}
+
+	.skills {
+		display: flex;
+		height: 40vh;
+		width: 100%;
+		padding-top: 8%;
+		padding-left: 5%;
+		list-style: disc;
+	}
+
+
+	.CV {
+		margin-bottom: 5%;
+	}
+
+	.CV p {
+		font-weight: bold;
+	}
+
+
+	main {
+		font-family: "Poppins", sans-serif;
+	}
+
+	main h2 {
+		font-size: 21.5px;
+	}
+
+	main p {
+		font-size: 13.5px;
+	}
+
+	main h3 {
+		font-size: 15.5px;
+	}
+
+	.contact {
+		height: 25vh;
+		font-size: 13px;
+	}
+
+}
+
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+@media only screen and (min-width: 576px) {
+
+	main h2 {
+		font-size: 24.5px;
+	}
+
+	main p {
+		font-size: 15px;
+	}
+
+	main h3 {
+		font-size: 18px;
+	}
+
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+@media only screen and (min-width: 768px) {
+
+	header {
+		height: 17vh;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+	}
+
+	.title {
+		display: inline-flex;
+		justify-content: center;
+		flex-wrap: nowrap;
+		width: 20%;
+		margin-left: 2%;
+
+	}
+
+	.linklist {
+		display: inline-flex;
+		justify-content: space-evenly;
+        text-align: center;
+		flex-direction: row;
+		width: 50%;
+		margin-right: 1%;
+		margin-left: 10%;
+	}
+
+	.linklist li {
+		padding: 0 1% 0 1%;
+	}
+
+	main h2 {
+		font-size: 26px;
+	}
+
+	main h3 {
+		font-size: 19px;
+	}
+
+	main p {
+		font-size: 16.5px;
+	}
+
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+@media only screen and (min-width: 1200px) {
+
+	.covering-letter {
+		height: 70vh;
+	}
+
+	main h3 {
+		font-size: 20.5px;
+	}
+
+	.eye-animation {
+		height: 50vh;
+	}
+
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
