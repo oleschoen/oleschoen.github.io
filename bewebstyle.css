@@ -38,7 +38,7 @@ header {
 	justify-content: baseline;
 	width: 50%;
 	list-style: none;
-	margin-right: 3%;
+	margin-right: 50%;
 }
 
 .linklist a {
@@ -242,11 +242,11 @@ header {
 	}
 
 	.linklist {
-		width: 18%;
+		min-width: 20%;
 		display: flex;
 		flex-direction: column;
 		justify-content: baseline;
-		margin-left: 40%;
+		margin-left: 10%;
 		text-align: center;
 		font-weight: bold;
 	}
@@ -256,7 +256,7 @@ header {
 	}
 
 	.introduction h1 {
-		font-size: 20px;
+		font-size: 17px;
 	}
 
 	.covering-letter {
@@ -271,15 +271,14 @@ header {
 
     .covering-letter h2 {
 		font-size: 18px;
-		height: 5%;
+		min-height: 10%;
 		text-align: center;
 		margin: 5% 0 5% 0;
 		padding: 0%;
 	}
 
 	.covering-letter p {
-		width: 95%;
-		text-align: center;
+		width: 90%;
 		overflow: visible;
 	}
 
