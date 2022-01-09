@@ -4,6 +4,7 @@
     padding: 0;
     margin: 0;
     font-family: Tahoma, Verdana, Segoe, sans-serif;
+	overflow-x: hidden;
 }
 
 /*------------------------------------------------------------------------------------------------------------------------------------------------------------*/
@@ -19,56 +20,31 @@ body {
 header {
 	display: flex;
 	justify-content: space-evenly;
-	align-items: center;
-	min-height: 8vh;
-	background-color: deepskyblue;
-    font-family: "Poppins", sans-serif;
-	color: white;
-	font-size: 20px;
-	text-transform: uppercase;
-	position: fixed;
+	height: 15vh;
 	width: 100%;
-	height: 10vh;
-	z-index: 6;
+	background-color: deepskyblue;
+	color: white;
 }
 
 .title {
 	width: fit-content;
-	display: flex;
+	display: inline-flex;
 	flex-wrap: nowrap;
+	text-transform: uppercase;
 }
 
-
 .linklist {
-
-	width: 40%;
+	display: inline-flex;
+	justify-content: baseline;
+	width: 50%;
 	list-style: none;
+	margin-right: 3%;
 }
 
 .linklist a {
-	text-transform: uppercase;
 	color: white;
 	font-size: 15px;
 	padding: 0% 10% 0% 10%;
-}
-
-/*------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-
-.test {
-	display: flex;
-	justify-content: center;
-	width: 100%;
-	height: 40vh;
-	background-color: lightskyblue;
-	color: black;
-}
-
-.test div {
-	border: 2px solid salmon;
-}
-
-.test h1 {
-	border: 2px solid salmon;
 }
 
 /*------------------------------------------------------------------------------------------------------------------------------------------------------------*/
@@ -132,7 +108,6 @@ header {
 /*------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 .covering-letter {
-    border-bottom-color: black;
     display: flex;
 	flex-wrap: wrap;
     justify-content: center;
@@ -157,33 +132,10 @@ header {
 /*------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 .skills {
-	width: 100%;
-	height: 90vh;
 	display: flex;
-	justify-content: space-evenly;
-	align-items: center;
-	flex-wrap: wrap;
-}
-
-
-.skilllist {
-	display: inline-flex;
-	flex-direction: column;
-	justify-content: center;
-	width: 30%;
-	list-style: disc;
-	height: 550px;
-    flex-shrink: 1;
-}
-
-.eye-animation {
-	display: inline-flex;
-	position: relative;
-	object-fit: contain;
-	width: 50%;
-	height: 50%;
-	background-color: white;
-	flex-shrink: 4;
+	height: 40vh;
+	width: 100%;
+	justify-content: flex-start;
 }
 
 /*------------------------------------------------------------------------------------------------------------------------------------------------------------*/
@@ -273,7 +225,7 @@ header {
 /*------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 /*------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
-@media (min-width: 0px) {
+@media only screen and (min-width: 0px) {
 
 	body {
 		width: auto;
@@ -299,42 +251,47 @@ header {
 		font-weight: bold;
 	}
 
+	.introduction {
+		height: 62vh;
+	}
+
+	.introduction h1 {
+		font-size: 20px;
+	}
+
 	.covering-letter {
 		display: flex;
-		justify-content: space-evenly;
+		justify-content: flex-start;
 		flex-direction: column;
 		align-content: center;
-		overflow: scroll;
-		margin-bottom: 5%;
+		height: 80vh;
+		padding-top: 0%;
+		overflow: visible;
 	}
 
     .covering-letter h2 {
+		font-size: 18px;
 		height: 5%;
 		text-align: center;
-		margin: 0;
+		margin: 5% 0 5% 0;
 		padding: 0%;
 	}
 
 	.covering-letter p {
-		width: 90%;
+		width: 95%;
 		text-align: center;
+		overflow: visible;
 	}
 
 	.skills {
 		display: flex;
-		justify-content: flex-start;
 		height: 40vh;
-	}
-
-
-
-	.skilllist {
-		display: inline-flex;
-		height: 35%;
 		width: 100%;
-		margin-left: 10%;
-		font-weight: bold;
+		padding-top: 8%;
+		padding-left: 5%;
+		list-style: disc;
 	}
+
 
 	.CV {
 		margin-bottom: 5%;
@@ -361,11 +318,17 @@ header {
 		font-size: 15.5px;
 	}
 
+	.contact {
+		height: 25vh;
+		font-size: 13px;
+	}
+
 }
+
 
 /*------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
-@media (min-width: 576px) {
+@media only screen and (min-width: 576px) {
 
 	main h2 {
 		font-size: 24.5px;
@@ -383,7 +346,7 @@ header {
 
 /*------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
-@media (min-width: 768px) {
+@media only screen and (min-width: 768px) {
 
 	header {
 		height: 17vh;
@@ -431,7 +394,7 @@ header {
 
 /*------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
-@media (min-width: 1200px) {
+@media only screen and (min-width: 1200px) {
 
 	.covering-letter {
 		height: 70vh;
@@ -441,6 +404,9 @@ header {
 		font-size: 20.5px;
 	}
 
+	.eye-animation {
+		height: 50vh;
+	}
 
 }
 
