@@ -231,25 +231,30 @@ header {
 		width: auto;
 	}
 
-    header {
-		height: 18vh;
-		display: flex;
-		flex-direction: row;
-		justify-content: space-evenly;
-		align-items: center;
-		padding-right: 3%;
-		padding-left: 2%;
-	}
+	header {
+    	display: flex;
+    	justify-content: flex-start;
+    	flex-direction: row;
+    	align-items: center;
+    	position: fixed;
+    	z-index: 4;
+    }
 
-	.linklist {
-		min-width: 20%;
-		display: flex;
-		flex-direction: column;
-		justify-content: baseline;
-		margin-left: 10%;
-		text-align: center;
-		font-weight: bold;
-	}
+    .title {
+    	display: inline-flex;
+    	margin-left: 10%;
+    	min-width: 35%;
+    }
+
+    .linklist {
+    	display: inline-flex;
+    	flex-direction: column;
+    	min-width: 30%;
+    	margin-left: 17%;
+    	margin-right: 13%;
+    	text-align: center;
+		text-transform: uppercase;
+    }
 
 	.introduction {
 		height: 62vh;
@@ -284,11 +289,15 @@ header {
 
 	.skills {
 		display: flex;
-		height: 40vh;
+		justify-content: center;
+		flex-direction: column;
+		height: 35vh;
 		width: 100%;
 		padding-top: 8%;
 		padding-left: 5%;
 		list-style: disc;
+		font-weight: bolder;
+		margin-bottom: 2%
 	}
 
 
@@ -314,7 +323,7 @@ header {
 	}
 
 	main h3 {
-		font-size: 15.5px;
+		font-size: 14.5px;
 	}
 
 	.contact {
@@ -329,8 +338,27 @@ header {
 
 @media all and (min-width: 576px) {
 
+	.introduction h1 {
+		font-size: 20px;
+	}
+
+	.covering-letter {
+		height: 60vh;
+	}
+
+	.covering-letter h2 {
+		font-size: 19px;
+	}
+
+	.skills {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		margin-bottom: 4%;
+	}
+
 	main h2 {
-		font-size: 24.5px;
+		font-size: 21.5px;
 	}
 
 	main p {
@@ -341,44 +369,66 @@ header {
 		font-size: 18px;
 	}
 
+	.contact h2 {
+		font-size: 21.5px;
+	}
+
 }
 
 /*------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 @media all and (min-width: 768px) {
 
+	.introduction h1 {
+		font-size: 20px;
+	}
+
 	header {
-		height: 17vh;
-		display: flex;
-		flex-direction: row;
-		justify-content: space-evenly;
+	    display: flex;
+	    justify-content: flex-start;
+		width: 100%;
 	}
 
-	.title {
-		display: inline-flex;
-		justify-content: center;
-		flex-wrap: nowrap;
-		width: 20%;
-		margin-left: 2%;
+    .title {
+    	min-width: 20%;
+    	display: inline-flex;
+    	justify-content: center;
+    }
+    
+    .linklist {
+    	display: inline-flex;
+    	flex-direction: row;
+    	justify-content: flex-start;
+    	min-width: 70%;
+    	margin-left: 3%;
+    	overflow: visible;
+    }
 
+    .linklist li {
+    	min-width: 20%;
+    	margin-left: 5%;
+    }
+
+	.introduction h1 {
+    	font-size: 23px;
+    }
+
+	.covering-letter {
+    	height: 60vh;
+    }
+
+	.covering-letter h2 {
+		text-align: center;
+		font-size: 23px;
 	}
 
-	.linklist {
-		display: inline-flex;
-		justify-content: space-evenly;
-        text-align: center;
-		flex-direction: row;
-		width: 50%;
-		margin-right: 1%;
-		margin-left: 10%;
-	}
-
-	.linklist li {
-		padding: 0 1% 0 1%;
-	}
+	.skills {
+    	height: 30vh;
+    	margin-bottom: 3%;
+    }
 
 	main h2 {
-		font-size: 26px;
+		font-size: 23px;
 	}
 
 	main h3 {
@@ -389,6 +439,10 @@ header {
 		font-size: 16.5px;
 	}
 
+	.contact h2 {
+		font-size: 23px;
+	}
+
 }
 
 /*------------------------------------------------------------------------------------------------------------------------------------------------------------*/
@@ -397,6 +451,11 @@ header {
 
 	.covering-letter {
 		height: 70vh;
+	}
+
+	.covering-letter h2 {
+		text-align: center;
+		font-size: 21.5px;
 	}
 
 	main h3 {
