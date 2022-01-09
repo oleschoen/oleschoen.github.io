@@ -379,10 +379,6 @@ header {
 
 @media all and (min-width: 768px) {
 
-	.introduction h1 {
-		font-size: 20px;
-	}
-
 	header {
 	    display: flex;
 	    justify-content: flex-start;
@@ -392,7 +388,8 @@ header {
     .title {
     	min-width: 20%;
     	display: inline-flex;
-    	justify-content: center;
+    	text-align: center;
+    	margin-left: 3%;
     }
     
     .linklist {
@@ -408,6 +405,10 @@ header {
     	min-width: 20%;
     	margin-left: 5%;
     }
+
+	.introduction {
+		height: 85vh;
+	}
 
 	.introduction h1 {
     	font-size: 23px;
@@ -460,10 +461,6 @@ header {
 
 	main h3 {
 		font-size: 20.5px;
-	}
-
-	.eye-animation {
-		height: 50vh;
 	}
 
 }
