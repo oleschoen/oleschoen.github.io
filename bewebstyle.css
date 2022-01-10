@@ -249,7 +249,7 @@ header {
     .linklist {
     	display: inline-flex;
     	flex-direction: column;
-    	min-width: 30%;
+    	min-width: 35%;
     	margin-left: 17%;
     	margin-right: 13%;
     	text-align: center;
@@ -269,9 +269,8 @@ header {
 		justify-content: flex-start;
 		flex-direction: column;
 		align-content: center;
-		height: 80vh;
+		height: fit-content;
 		padding-top: 0%;
-		overflow: visible;
 		margin-bottom: 5%;
 	}
 
