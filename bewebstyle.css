@@ -9,18 +9,8 @@
 
 /*------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
-.animation-container {
-	display: grid;
-	justify-content: center;
-	align-items: center;
-	height: fit-content;
-	width: 100%;
-	border: 2px solid red;
-}
-
-
 .animation {
-	background-color: white;
+	background-color: deepskyblue;
 	/* center content */
 	margin: auto;
 	width: 100%;
@@ -29,12 +19,13 @@
   }
   
   .animation p{
-	color: #feffd6;
+	color: black;
 	padding-top: 3%;
 	text-align: center;
 	margin-top: 13%;
 	font-size: 1.4rem;
 	position: relative;
+	text-transform: uppercase;
   }
   
   .animation div { 
@@ -56,19 +47,19 @@
 	} 
 	25%{
 	  color: #235796;
-	  text-shadow: 8px 10px 0px blue;
+	  text-shadow: 8px 10px 0px grey;
 	}
 	50%{
-	  text-shadow: 8px 10px 0px blue, 
+	  text-shadow: 8px 10px 0px grey, 
 	  13px 15px 0px lightblue,
 	}
 	75%{
-	  text-shadow: 8px 10px 0px blue, 
+	  text-shadow: 8px 10px 0px grey, 
 	  13px 15px 0px lightblue,
 	  18px 20px 0px white,
 	}
 	100%{
-	  text-shadow: 8px 10px 0px blue, 
+	  text-shadow: 8px 10px 0px grey, 
 	  13px 15px 0px deepskyblue,
 	  18px 20px 0px lightblue,
 	  23px 25px 0px white;   
