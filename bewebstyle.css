@@ -625,6 +625,10 @@ header {
 		contain: content;
 	}
 
+	.animation p {
+		height: fit-content;
+	}
+
 	main h3 {
 		font-size: 20.5px;
 	}
