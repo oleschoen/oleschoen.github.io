@@ -353,6 +353,22 @@ header {
 		overflow: visible;
 	}
 
+	.animation {
+		width: 90%;
+		height: fit-content;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.animation div {
+		display: flex;
+		justify-content: center;
+		width: 100%;
+		font-size: 15vh;
+		contain: content;
+	}
+
 	.skills {
 		display: flex;
 		justify-content: center;
@@ -415,6 +431,22 @@ header {
 
 	.covering-letter h2 {
 		font-size: 19px;
+	}
+
+	.animation {
+		width: 90%;
+		height: fit-content;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.animation div {
+		display: flex;
+		justify-content: center;
+		width: 100%;
+		font-size: 19vh;
+		contain: content;
 	}
 
 	.skills {
@@ -490,6 +522,22 @@ header {
 		font-size: 23px;
 	}
 
+	.animation {
+		width: 90%;
+		height: fit-content;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.animation div {
+		display: flex;
+		justify-content: center;
+		width: 100%;
+		font-size: 23vh;
+		contain: content;
+	}
+
 	.skills {
     	height: 30vh;
     	margin-bottom: 3%;
@@ -528,6 +576,22 @@ header {
 		text-align: center;
 		font-size: 21.5px;
 		min-height: 30%;
+	}
+
+	.animation {
+		width: 90%;
+		height: fit-content;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.animation div {
+		display: flex;
+		justify-content: center;
+		width: 100%;
+		font-size: 26vh;
+		contain: content;
 	}
 
 	main h3 {
