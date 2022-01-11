@@ -14,12 +14,13 @@
 	/* center content */
 	margin: auto;
 	width: 100%;
-	height: 100%;
+	height: fit-content;
 	font-family: 'Mochiy Pop P One', sans-serif;
   }
   
   .animation p{
 	color: #feffd6;
+	padding-top: 3%;
 	text-align: center;
 	margin-top: 13%;
 	font-size: 1.4rem;
@@ -31,11 +32,13 @@
 	position: relative;
 	font-size: 13rem;
 	top: 30%;
+	left: 15%;
 	animation-name: shadow;
 	animation-duration: 3s;
-	animation-iteration-count: 3;
+	animation-iteration-count: infinite;
 	animation-fill-mode: forwards;
 	animation-direction: alternate;
+	padding-bottom: 5%;
   }
   
   @keyframes shadow{
