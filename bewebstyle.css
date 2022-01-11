@@ -429,7 +429,7 @@ header {
 	}
 
 	.covering-letter {
-		height: 60vh;
+		height: fit-content;
 		margin-bottom: 0%;
 	}
 
@@ -518,7 +518,7 @@ header {
     }
 
 	.covering-letter {
-    	height: 60vh;
+    	height: fit-content;
     }
 
 	.covering-letter h2 {
@@ -570,7 +570,7 @@ header {
 @media all and (min-width: 1200px) {
 
 	.covering-letter {
-		height: 50vh;
+		height: fit-content;
 		display: grid;
 		justify-content: center;
 		align-items: center;
