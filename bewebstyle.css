@@ -609,6 +609,11 @@ header {
 		min-height: 30%;
 	}
 
+	.covering-letter p {
+		height: fit-content;
+		padding-bottom: 1%;
+	}
+
 	.animation {
 		width: 90%;
 		height: fit-content;
@@ -623,10 +628,6 @@ header {
 		width: 100%;
 		font-size: 26vh;
 		contain: content;
-	}
-
-	.animation p {
-		height: fit-content;
 	}
 
 	main h3 {
