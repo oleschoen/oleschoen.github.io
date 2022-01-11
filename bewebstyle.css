@@ -369,6 +369,139 @@ header {
 		display: flex;
 		justify-content: center;
 		width: 100%;
+		font-size: 8vh;
+		contain: content;
+	}
+
+	.skills {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		height: 35vh;
+		width: 100%;
+		padding-top: 8%;
+		padding-left: 5%;
+		list-style: disc;
+		font-weight: bolder;
+		margin-bottom: 2%
+	}
+
+
+	.CV {
+		margin-bottom: 5%;
+	}
+
+	.CV p {
+		font-weight: bold;
+	}
+
+
+	main {
+		font-family: "Poppins", sans-serif;
+	}
+
+	main h2 {
+		font-size: 21.5px;
+	}
+
+	main p {
+		font-size: 13.5px;
+	}
+
+	main h3 {
+		font-size: 14.5px;
+	}
+
+	.contact {
+		height: 25vh;
+		font-size: 13px;
+	}
+
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+@media all and (min-width: 300px) {
+
+	body {
+		width: auto;
+	}
+
+	header {
+    	display: flex;
+    	justify-content: flex-start;
+    	flex-direction: row;
+    	align-items: center;
+    	position: fixed;
+    	z-index: 4;
+    }
+
+    .title {
+    	display: inline-flex;
+    	margin-left: 10%;
+    	min-width: 35%;
+    }
+
+    .linklist {
+    	display: inline-flex;
+    	flex-direction: column;
+    	min-width: 35%;
+    	margin-left: 17%;
+    	margin-right: 13%;
+    	text-align: center;
+		text-transform: uppercase;
+    }
+
+	.introduction {
+		height: 62vh;
+	}
+
+	.introduction h1 {
+		font-size: 17px;
+	}
+
+	.covering-letter {
+		display: flex;
+		justify-content: flex-start;
+		flex-direction: column;
+		align-content: center;
+		height: fit-content;
+		padding-top: 0%;
+		margin-bottom: 5%;
+		overflow: visible;
+	}
+
+    .covering-letter h2 {
+		font-size: 18px;
+		min-height: 10%;
+		text-align: center;
+		margin: 5% 0 5% 0;
+		padding-bottom: 3%;
+	}
+
+	.covering-letter p {
+		width: 90%;
+		overflow: visible;
+	}
+
+	.animation {
+		width: 90%;
+		height: fit-content;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.animation p {
+		font-size: 3vh;
+	}
+
+	.animation div {
+		display: flex;
+		justify-content: center;
+		width: 100%;
 		font-size: 15vh;
 		contain: content;
 	}
