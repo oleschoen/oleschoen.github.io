@@ -31,16 +31,10 @@
 	text-align: center;
 	margin-top: 13%;
 	font-size: 1.4rem;
-	position: relative;
 	text-transform: uppercase;
   }
   
   .animation div { 
-	color: #0f2642;
-	position: relative;
-	font-size: 13rem;
-	top: 30%;
-	left: 15%;
 	animation-name: shadow;
 	animation-duration: 3s;
 	animation-iteration-count: infinite;
@@ -53,7 +47,7 @@
 	0%{
 	} 
 	25%{
-	  color: #235796;
+	  color: black;
 	  text-shadow: 8px 10px 0px grey;
 	}
 	50%{
@@ -357,8 +351,13 @@ header {
 		width: 90%;
 		height: fit-content;
 		display: flex;
+		justify-content: center;
 		flex-direction: column;
 		align-items: center;
+	}
+
+	.animation p {
+		font-size: 3vh;
 	}
 
 	.animation div {
